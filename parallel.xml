@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel" thread-count="2" parallel="tests">
+    <test name="HappyPath">
+        <classes> 
+            <class name="split.docker.selenium.Test1"/>
+          
+        </classes>
+    </test>
+     <test name="unhappyPath">
+        <classes> 
+            <class name= "split.docker.selenium.test2"/>
+        </classes>
+    </test>
+</suite>

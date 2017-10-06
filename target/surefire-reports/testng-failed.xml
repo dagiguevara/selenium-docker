@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [Parallel]" parallel="tests">
+  <test name="HappyPath">
+    <classes>
+      <class name="split.docker.selenium.Test1"/>
+    </classes>
+  </test> <!-- HappyPath -->
+  <test name="unhappyPath">
+    <classes>
+      <class name="split.docker.selenium.test2"/>
+    </classes>
+  </test> <!-- unhappyPath -->
+</suite> <!-- Failed suite [Parallel] -->

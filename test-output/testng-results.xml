@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="29346" started-at="2017-10-06T21:51:30Z" finished-at="2017-10-06T21:52:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="29346" started-at="2017-10-06T21:51:30Z" finished-at="2017-10-06T21:52:00Z">
+      <class name="split.docker.selenium.Test1">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.Test1@5e3a8624]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2017-10-06T15:51:30Z" finished-at="2017-10-06T15:51:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:split.docker.selenium.Test1@5e3a8624]" name="f" duration-ms="29312" started-at="2017-10-06T15:51:30Z" finished-at="2017-10-06T15:52:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:split.docker.selenium.Test1@5e3a8624]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-06T15:52:00Z" finished-at="2017-10-06T15:52:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- split.docker.selenium.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
