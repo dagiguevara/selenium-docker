@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Parallel">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Parallel">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Parallel" title="split.docker.selenium.test2" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel" title="split.docker.selenium.Test1" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Parallel" title="split.docker.selenium.Test1" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel" title="split.docker.selenium.test2" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel" title="split.docker.selenium.Test3" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Parallel" title="split.docker.selenium.Test4" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Parallel -->
@@ -125,14 +135,29 @@
           <div class="suite-Parallel-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">split.docker.selenium.Test3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel-class-passed -->
+          <div class="suite-Parallel-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">split.docker.selenium.test2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
-                  <span class="method-name">f</span>
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,9 +170,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
-                  <span class="method-name">f</span>
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel-class-passed -->
+          <div class="suite-Parallel-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">split.docker.selenium.Test4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,6 +212,16 @@
       &lt;class name=&quot;split.docker.selenium.test2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- unhappyPath --&gt;
+  &lt;test name=&quot;unhappyPath2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;split.docker.selenium.Test3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- unhappyPath2 --&gt;
+  &lt;test name=&quot;unhappyPath3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;split.docker.selenium.Test4&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- unhappyPath3 --&gt;
 &lt;/suite&gt; &lt;!-- Parallel --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,6 +237,12 @@
               </li>
               <li>
                 <span class="test-name">unhappyPath (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">unhappyPath2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">unhappyPath3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,20 +268,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f')
-data.setCell(0, 2, 'split.docker.selenium.Test1')
-data.setCell(0, 3, 27595);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'split.docker.selenium.test2')
+data.setCell(0, 3, 1231);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'f')
-data.setCell(1, 2, 'split.docker.selenium.test2')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'split.docker.selenium.Test1')
+data.setCell(1, 3, 1222);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'split.docker.selenium.Test4')
+data.setCell(2, 3, 896);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'split.docker.selenium.Test3')
+data.setCell(3, 3, 803);
 window.suiteTableData['Parallel']= { tableData: data, tableDiv: 'times-div-Parallel'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Parallel">
               </div> <!-- times-div-Parallel -->
             </div> <!-- times-div -->
@@ -263,31 +327,39 @@ return data;
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">4808 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">split.docker.selenium.Test1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">f</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">4821 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">split.docker.selenium.test2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">split.docker.selenium.Test3</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">11076 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">f</span>
-                <span class="method-start">6157 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">13414 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">6157 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">split.docker.selenium.Test1</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">27600 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="chronological-class-name">split.docker.selenium.Test4</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">16073 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">18261 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

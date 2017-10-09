@@ -1,31 +1,25 @@
 package split.docker.selenium;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-
 import java.net.MalformedURLException;
-import java.net.URL;
+import split.docker.selenium.Init;
+import org.openqa.selenium.By;
 
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterMethod;
 
-public class test2 {
-	RemoteWebDriver driver;
+
+
+
+public class  test2 extends Init{
+	
+
 	
   @Test
-  public void f() {
+  public void login() throws MalformedURLException {
+	  driver.findElement(By.name("email")).sendKeys("donald05@test.com");
+	  driver.findElement(By.name("password")).sendKeys("Password01");
+	  driver.quit();
+ 
   }
-  @BeforeMethod
-  public void beforeMethod() throws MalformedURLException {
-	  DesiredCapabilities capability = DesiredCapabilities.chrome();
-	  driver = new RemoteWebDriver (new URL ( "http://localhost:4446/wd/hub"), capability);
-	  driver.get("http://aqua-gem-dev.acklenavenueclient.com/#/");
-	  
-  }
-
-  @AfterMethod
-  public void afterMethod() {
-  }
+  
 
 }

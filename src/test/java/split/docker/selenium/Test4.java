@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 
 
 
-public class  Test1 extends Init{
+public class  Test4 extends Init{
 	
 
 	
@@ -21,5 +21,4 @@ public class  Test1 extends Init{
  
   }
   
-
 }

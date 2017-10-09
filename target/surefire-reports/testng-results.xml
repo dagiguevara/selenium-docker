@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel" duration-ms="27612" started-at="2017-10-06T21:55:23Z" finished-at="2017-10-06T21:55:51Z">
+  <suite name="Parallel" duration-ms="19165" started-at="2017-10-09T18:46:46Z" finished-at="2017-10-09T18:47:05Z">
     <groups>
     </groups>
-    <test name="unhappyPath" duration-ms="6170" started-at="2017-10-06T21:55:23Z" finished-at="2017-10-06T21:55:30Z">
-      <class name="split.docker.selenium.test2">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.test2@6615435c]" name="beforeMethod" is-config="true" duration-ms="6157" started-at="2017-10-06T15:55:23Z" finished-at="2017-10-06T15:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:split.docker.selenium.test2@6615435c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-10-06T15:55:30Z" finished-at="2017-10-06T15:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:split.docker.selenium.test2@6615435c]" name="f" duration-ms="0" started-at="2017-10-06T15:55:30Z" finished-at="2017-10-06T15:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- split.docker.selenium.test2 -->
-    </test> <!-- unhappyPath -->
-    <test name="HappyPath" duration-ms="27612" started-at="2017-10-06T21:55:23Z" finished-at="2017-10-06T21:55:51Z">
+    <test name="HappyPath" duration-ms="6052" started-at="2017-10-09T18:46:46Z" finished-at="2017-10-09T18:46:52Z">
       <class name="split.docker.selenium.Test1">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.Test1@180bc464]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2017-10-06T15:55:23Z" finished-at="2017-10-06T15:55:23Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.Test1@1324409e]" name="beforeMethod" is-config="true" duration-ms="4821" started-at="2017-10-09T12:46:46Z" finished-at="2017-10-09T12:46:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:split.docker.selenium.Test1@180bc464]" name="f" duration-ms="27595" started-at="2017-10-06T15:55:23Z" finished-at="2017-10-06T15:55:51Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:split.docker.selenium.Test1@1324409e]" name="login" duration-ms="1222" started-at="2017-10-09T12:46:51Z" finished-at="2017-10-09T12:46:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:split.docker.selenium.Test1@180bc464]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-10-06T15:55:51Z" finished-at="2017-10-06T15:55:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
+        </test-method> <!-- login -->
       </class> <!-- split.docker.selenium.Test1 -->
     </test> <!-- HappyPath -->
+    <test name="unhappyPath" duration-ms="6045" started-at="2017-10-09T18:46:46Z" finished-at="2017-10-09T18:46:52Z">
+      <class name="split.docker.selenium.test2">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.test2@4909b8da]" name="beforeMethod" is-config="true" duration-ms="4808" started-at="2017-10-09T12:46:46Z" finished-at="2017-10-09T12:46:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:split.docker.selenium.test2@4909b8da]" name="login" duration-ms="1231" started-at="2017-10-09T12:46:51Z" finished-at="2017-10-09T12:46:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- split.docker.selenium.test2 -->
+    </test> <!-- unhappyPath -->
+    <test name="unhappyPath2" duration-ms="3141" started-at="2017-10-09T18:46:57Z" finished-at="2017-10-09T18:47:01Z">
+      <class name="split.docker.selenium.Test3">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.Test3@366e2eef]" name="beforeMethod" is-config="true" duration-ms="2338" started-at="2017-10-09T12:46:57Z" finished-at="2017-10-09T12:47:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:split.docker.selenium.Test3@366e2eef]" name="login" duration-ms="803" started-at="2017-10-09T12:47:00Z" finished-at="2017-10-09T12:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- split.docker.selenium.Test3 -->
+    </test> <!-- unhappyPath2 -->
+    <test name="unhappyPath3" duration-ms="3084" started-at="2017-10-09T18:47:02Z" finished-at="2017-10-09T18:47:05Z">
+      <class name="split.docker.selenium.Test4">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:split.docker.selenium.Test4@5a61f5df]" name="beforeMethod" is-config="true" duration-ms="2188" started-at="2017-10-09T12:47:02Z" finished-at="2017-10-09T12:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login()[pri:0, instance:split.docker.selenium.Test4@5a61f5df]" name="login" duration-ms="896" started-at="2017-10-09T12:47:05Z" finished-at="2017-10-09T12:47:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- split.docker.selenium.Test4 -->
+    </test> <!-- unhappyPath3 -->
   </suite> <!-- Parallel -->
 </testng-results>

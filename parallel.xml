@@ -11,4 +11,16 @@
             <class name= "split.docker.selenium.test2"/>
         </classes>
     </test>
+ 
+     <test name="unhappyPath2">
+        <classes> 
+            <class name= "split.docker.selenium.Test3"/>
+        </classes>
+    </test>
+   
+     <test name="unhappyPath3">
+        <classes> 
+            <class name= "split.docker.selenium.Test4"/>
+        </classes>
+    </test>
 </suite>
